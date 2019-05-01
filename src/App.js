@@ -4,6 +4,7 @@ import './App.css';
 import Home from './Home';
 import About from './About';
 import Dogs from './Dogs';
+import Dog from './Dog';
 import PageNotFound from './PageNotFound';
 
 import {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/dogs" component={Dogs} />
           <Route component={PageNotFound} />
         </Switch>
+        <Route path="/dogs/:dog" component={Dog} />
       </header>
     </div>
   );
